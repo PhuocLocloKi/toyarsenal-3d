@@ -1,7 +1,7 @@
 # ToyArsenal 3D 🔫
 
 <p align="center">
-  <!-- Interactive Animated SVG Banner directly rendering inside Github Markdown -->
+  <!-- Animated SVG Banner using native SMIL animations (100% safe for Markdown/GitHub/VSCode) -->
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" style="background:#06080c; border-radius:16px; border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
     <defs>
       <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -22,28 +22,6 @@
       </filter>
     </defs>
 
-    <style>
-      @keyframes rotateHUD { to { transform: rotate(360deg); } }
-      @keyframes floatGrid { 0% { transform: translateY(0); } 100% { transform: translateY(20px); } }
-      @keyframes laserScan { 0% { top: 20px; opacity: 0.2; } 50% { opacity: 0.8; } 100% { top: 280px; opacity: 0.2; } }
-      @keyframes textGlitch {
-        0%, 100% { transform: translate(0); text-shadow: 0 0 10px #00f2fe; }
-        20% { transform: translate(-2px, 1px); text-shadow: -2px 0 #ff0055, 2px 0 #00f2fe; }
-        40% { transform: translate(1px, -1px); text-shadow: 2px 0 #ff0055, -2px 0 #00f2fe; }
-        60% { transform: translate(-1px, -1px); }
-        80% { transform: translate(2px, 1px); }
-      }
-      @keyframes pulseGridGlow {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.75; }
-      }
-      .hud-circle { transform-origin: 650px 150px; animation: rotateHUD 25s linear infinite; }
-      .hud-circle-rev { transform-origin: 650px 150px; animation: rotateHUD 15s linear infinite reverse; }
-      .laser-line { animation: laserScan 4s ease-in-out infinite alternate; }
-      .glitch-text { animation: textGlitch 4s step-end infinite; }
-      .grid-glow { animation: pulseGridGlow 3s ease-in-out infinite; }
-    </style>
-
     <!-- Blueprint Grid -->
     <rect width="100%" height="100%" fill="url(#gridGrad)" />
     <g stroke="rgba(255, 255, 255, 0.02)" stroke-width="1">
@@ -58,8 +36,9 @@
     <line x1="150" y1="30" x2="150" y2="270" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
     <line x1="30" y1="150" x2="270" y2="150" stroke="rgba(255, 255, 255, 0.03)" stroke-width="1" />
 
-    <!-- Interactive Gun Blueprint Wireframe (Center) -->
-    <g fill="none" stroke="url(#cyberGrad)" stroke-width="1.5" class="grid-glow" filter="url(#neonGlow)">
+    <!-- Interactive Gun Blueprint Wireframe (Center) with SMIL Opacity Pulse -->
+    <g fill="none" stroke="url(#cyberGrad)" stroke-width="1.5" filter="url(#neonGlow)">
+      <animate attributeName="opacity" values="0.3;0.85;0.3" dur="3s" repeatCount="indefinite" />
       <!-- Barrel -->
       <rect x="260" y="135" width="220" height="25" rx="3" />
       <line x1="300" y1="135" x2="300" y2="160" />
@@ -80,11 +59,17 @@
       <path d="M 450,160 Q 470,180 480,160" />
     </g>
 
-    <!-- High-Tech HUD Interface rings (Right side) -->
+    <!-- High-Tech HUD Interface rings (Right side) with SMIL Rotation -->
     <g stroke="#00f2fe" fill="none" stroke-width="1.5">
-      <circle cx="650" cy="150" r="85" stroke-dasharray="10 15 50 10" class="hud-circle" opacity="0.6" />
-      <circle cx="650" cy="150" r="70" stroke-dasharray="30 10 10 30" class="hud-circle-rev" opacity="0.5" stroke="#ff0055" />
-      <circle cx="650" cy="150" r="50" stroke-dasharray="5 5 15 5" class="hud-circle" opacity="0.3" />
+      <circle cx="650" cy="150" r="85" stroke-dasharray="10 15 50 10" opacity="0.6">
+        <animateTransform attributeName="transform" type="rotate" from="0 650 150" to="360 650 150" dur="22s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="650" cy="150" r="70" stroke-dasharray="30 10 10 30" opacity="0.5" stroke="#ff0055">
+        <animateTransform attributeName="transform" type="rotate" from="360 650 150" to="0 650 150" dur="14s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="650" cy="150" r="50" stroke-dasharray="5 5 15 5" opacity="0.3">
+        <animateTransform attributeName="transform" type="rotate" from="0 650 150" to="360 650 150" dur="8s" repeatCount="indefinite" />
+      </circle>
       <circle cx="650" cy="150" r="5" fill="#00f2fe" stroke="none" />
     </g>
 
@@ -93,11 +78,17 @@
     <text x="35" y="70" fill="#ff0055" font-family="'Space Grotesk', Courier, monospace" font-size="12" opacity="0.8" letter-spacing="1">WEAPONS: LCK_ON</text>
     <text x="35" y="90" fill="rgba(255,255,255,0.4)" font-family="'Space Grotesk', Courier, monospace" font-size="10">FPS: 60.00 / MS: 16.6</text>
 
-    <!-- Main Glitch Heading -->
-    <text x="400" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="34" font-weight="900" text-anchor="middle" letter-spacing="6" class="glitch-text" filter="url(#neonGlow)">TOY ARSENAL 3D</text>
+    <!-- Main Glitch Heading with SMIL Opacity Pulse -->
+    <text x="400" y="70" fill="#ffffff" font-family="'Space Grotesk', sans-serif" font-size="34" font-weight="900" text-anchor="middle" letter-spacing="6" filter="url(#neonGlow)">
+      TOY ARSENAL 3D
+      <animate attributeName="opacity" values="0.8;1;0.5;1;0.9" dur="3s" repeatCount="indefinite" />
+    </text>
 
-    <!-- Laser Scanning line effect -->
-    <line x1="0" y1="0" x2="800" y2="0" stroke="rgba(0, 242, 254, 0.4)" stroke-width="2" class="laser-line" filter="url(#neonGlow)" />
+    <!-- Laser Scanning line effect using SMIL Animation -->
+    <line x1="0" y1="20" x2="800" y2="20" stroke="rgba(0, 242, 254, 0.4)" stroke-width="2" filter="url(#neonGlow)">
+      <animate attributeName="y1" values="20;280;20" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="y2" values="20;280;20" dur="4s" repeatCount="indefinite" />
+    </line>
   </svg>
 </p>
 
@@ -127,7 +118,7 @@
 - Automatically fires glowing **laser energy projectiles** from the barrel muzzle.
 - Simulates realistic **casing ejection** with golden bullet shells spinning and dropping from the chamber.
 - Triggers a pulsing **Muzzle Flash Flare** at the tip of the barrel with every shot.
-- Emits an expanding concentric **Energy Shockwave** from the core of the súng every 3 shots.
+- Emits an expanding concentric **Energy Shockwave** from the core of the gun every 3 shots.
 
 ### 🎯 3. High-Tech Tactical HUD Overlay
 - A holographic **Laser Scan Line** sweeping vertically down the weapon chassis.
