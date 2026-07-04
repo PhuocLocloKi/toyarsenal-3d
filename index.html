@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Toy Arsenal - Premium Low-Poly Models</title>
+    <!-- Include Google's <model-viewer> library for rendering 3D GLB/GLTF models -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Advanced Canvas Particle Background -->
+    <canvas id="particleCanvas"></canvas>
+    <!-- Interactive HUD Custom Cursor Elements -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+    <header>
+        <div class="logo">ToyArsenal</div>
+        <nav>
+            <a href="#" id="homeNavLink">Home</a>
+            <a href="#" id="modelsNavLink">Models</a>
+        </nav>
+    </header>
+    <div class="carousel">
+        <div class="list">
+            <!-- Slide 1: Water Gun -->
+            <div class="item" data-index="0" style="--item-glow: #00ff66;">
+                <div class="model-container">
+                    <model-viewer 
+                        src="Model3d/Water%20gun.glb" 
+                        alt="3D Water Gun Model" 
+                        auto-rotate 
+                        camera-controls 
+                        shadow-intensity="1.5" 
+                        shadow-softness="0.8"
+                        field-of-view="40deg"
+                        min-field-of-view="15deg"
+                        max-field-of-view="90deg"
+                        interpolation-decay="200"
+                        interaction-prompt="none">
+                    </model-viewer>
+                    <div class="hud-overlay">
+                        <!-- Holographic laser scan bar -->
+                        <div class="hud-laser-scanner"></div>
+                        <!-- High-tech crosshair targeting reticle -->
+                        <div class="hud-reticle">
+                            <div class="reticle-circle"></div>
+                            <div class="reticle-line reticle-h"></div>
+                            <div class="reticle-line reticle-v"></div>
+                        </div>
+                        <div class="hud-bracket hud-top-left"></div>
+                        <div class="hud-bracket hud-top-right"></div>
+                        <div class="hud-bracket hud-bottom-left"></div>
+                        <div class="hud-bracket hud-bottom-right"></div>
+                        <div class="hud-scanner-ring"></div>
+                        <div class="hud-data hud-data-1">SYS: LCK_ON</div>
+                        <div class="hud-data hud-data-2">PWR: 100%</div>
+                    </div>
+                    <div class="hud-particles-container"></div>
+                </div>
+                <div class="intro">
+                    <div class="title">BRAND: POLY.PIZZA</div>
+                    <div class="topic">WATER GUN</div>
+                    <div class="price-tag">
+                        <span class="price-discount">$49.99</span>
+                        <span class="price-original">$69.99</span>
+                        <span class="discount-badge">-28%</span>
+                    </div>
+                    <div class="des">
+                        A stunning low-poly 3D model of a water gun. Experience full interactive 360-degree rotation, lighting reflections, and realistic shadows directly in your browser.
+                    </div>
+                    <button class="seemore">See Details &#8599;</button>
+                </div>
+                <div class="detail">
+                    <div class="title">3D Low-Poly Water Gun</div>
+                    <div class="des">
+                        An optimized game-ready 3D asset featuring smooth auto-rotation and interactive camera controls. Perfect for web integration and virtual showcases.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Asset Type</p>
+                            <p>3D GLB Model</p>
+                        </div>
+                        <div>
+                            <p>Polygons</p>
+                            <p>Low-Poly</p>
+                        </div>
+                        <div>
+                            <p>Style</p>
+                            <p>Cute & Toy</p>
+                        </div>
+                        <div>
+                            <p>Shadows</p>
+                            <p>Dynamic Soft</p>
+                        </div>
+                        <div>
+                            <p>Interactivity</p>
+                            <p>360° Control</p>
+                        </div>
+                        <div>
+                            <p>AR Ready</p>
+                            <p>Yes (WebXR)</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>Add to Cart</button>
+                        <button>Download</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2: Blaster - E Type -->
+            <div class="item" data-index="1" style="--item-glow: #ff0055;">
+                <div class="model-container">
+                    <model-viewer 
+                        src="Model3d/Blaster%20-%20E%20Type.glb" 
+                        alt="3D Blaster E Type Model" 
+                        auto-rotate 
+                        camera-controls 
+                        shadow-intensity="1.5" 
+                        shadow-softness="0.8"
+                        field-of-view="40deg"
+                        min-field-of-view="15deg"
+                        max-field-of-view="90deg"
+                        interpolation-decay="200"
+                        interaction-prompt="none">
+                    </model-viewer>
+                    <div class="hud-overlay">
+                        <div class="hud-laser-scanner"></div>
+                        <div class="hud-reticle">
+                            <div class="reticle-circle"></div>
+                            <div class="reticle-line reticle-h"></div>
+                            <div class="reticle-line reticle-v"></div>
+                        </div>
+                        <div class="hud-bracket hud-top-left"></div>
+                        <div class="hud-bracket hud-top-right"></div>
+                        <div class="hud-bracket hud-bottom-left"></div>
+                        <div class="hud-bracket hud-bottom-right"></div>
+                        <div class="hud-scanner-ring"></div>
+                        <div class="hud-data hud-data-1">SYS: LCK_ON</div>
+                        <div class="hud-data hud-data-2">PWR: 100%</div>
+                    </div>
+                    <div class="hud-particles-container"></div>
+                </div>
+                <div class="intro">
+                    <div class="title">BRAND: SCI-FI TOYS</div>
+                    <div class="topic">BLASTER E-TYPE</div>
+                    <div class="price-tag">
+                        <span class="price-discount">$59.99</span>
+                        <span class="price-original">$79.99</span>
+                        <span class="discount-badge">-25%</span>
+                    </div>
+                    <div class="des">
+                        A futuristic energy blaster model with a compact ergonomic grip. Perfect for cute retro-futuristic styling and sci-fi aesthetic.
+                    </div>
+                    <button class="seemore">See Details &#8599;</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Blaster - E Type</div>
+                    <div class="des">
+                        This model features premium mechanical detailing, ergonomic handling, and glowing plasma chambers designed to enhance virtual toy display aesthetics.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Asset Type</p>
+                            <p>3D GLB Model</p>
+                        </div>
+                        <div>
+                            <p>Polygons</p>
+                            <p>Low-Poly</p>
+                        </div>
+                        <div>
+                            <p>Style</p>
+                            <p>Futuristic Toy</p>
+                        </div>
+                        <div>
+                            <p>Ammo Type</p>
+                            <p>Plasma Energy</p>
+                        </div>
+                        <div>
+                            <p>Interactivity</p>
+                            <p>360° Control</p>
+                        </div>
+                        <div>
+                            <p>AR Ready</p>
+                            <p>Yes (WebXR)</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>Add to Cart</button>
+                        <button>Download</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3: Coil Gun -->
+            <div class="item" data-index="2" style="--item-glow: #00f2fe;">
+                <div class="model-container">
+                    <model-viewer 
+                        src="Model3d/Coil%20Gun.glb" 
+                        alt="3D Coil Gun Model" 
+                        auto-rotate 
+                        camera-controls 
+                        shadow-intensity="1.5" 
+                        shadow-softness="0.8"
+                        field-of-view="40deg"
+                        min-field-of-view="15deg"
+                        max-field-of-view="90deg"
+                        interpolation-decay="200"
+                        interaction-prompt="none">
+                    </model-viewer>
+                    <div class="hud-overlay">
+                        <div class="hud-laser-scanner"></div>
+                        <div class="hud-reticle">
+                            <div class="reticle-circle"></div>
+                            <div class="reticle-line reticle-h"></div>
+                            <div class="reticle-line reticle-v"></div>
+                        </div>
+                        <div class="hud-bracket hud-top-left"></div>
+                        <div class="hud-bracket hud-top-right"></div>
+                        <div class="hud-bracket hud-bottom-left"></div>
+                        <div class="hud-bracket hud-bottom-right"></div>
+                        <div class="hud-scanner-ring"></div>
+                        <div class="hud-data hud-data-1">SYS: LCK_ON</div>
+                        <div class="hud-data hud-data-2">PWR: 100%</div>
+                    </div>
+                    <div class="hud-particles-container"></div>
+                </div>
+                <div class="intro">
+                    <div class="title">BRAND: CYBER ARMS</div>
+                    <div class="topic">COIL GUN</div>
+                    <div class="price-tag">
+                        <span class="price-discount">$89.99</span>
+                        <span class="price-original">$119.99</span>
+                        <span class="discount-badge">-25%</span>
+                    </div>
+                    <div class="des">
+                        A high-tech magnetic coil accelerator model. Features multi-ring electromagnetic barrels and an industrial sci-fi aesthetic.
+                    </div>
+                    <button class="seemore">See Details &#8599;</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Coil Gun MK-I</div>
+                    <div class="des">
+                        The Coil Gun model highlights dynamic magnetic induction loops and copper winding, giving it a heavy industrial yet adorable low-poly sci-fi look.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Asset Type</p>
+                            <p>3D GLB Model</p>
+                        </div>
+                        <div>
+                            <p>Polygons</p>
+                            <p>Low-Poly</p>
+                        </div>
+                        <div>
+                            <p>Style</p>
+                            <p>Industrial Cyber</p>
+                        </div>
+                        <div>
+                            <p>Ammo Type</p>
+                            <p>Metal Slugs</p>
+                        </div>
+                        <div>
+                            <p>Interactivity</p>
+                            <p>360° Control</p>
+                        </div>
+                        <div>
+                            <p>AR Ready</p>
+                            <p>Yes (WebXR)</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>Add to Cart</button>
+                        <button>Download</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 4: Gun ver2 -->
+            <div class="item" data-index="3" style="--item-glow: #ffa200;">
+                <div class="model-container">
+                    <model-viewer 
+                        src="Model3d/Gun%20ver2.glb" 
+                        alt="3D Pistol Version 2 Model" 
+                        auto-rotate 
+                        camera-controls 
+                        shadow-intensity="1.5" 
+                        shadow-softness="0.8"
+                        field-of-view="40deg"
+                        min-field-of-view="15deg"
+                        max-field-of-view="90deg"
+                        interpolation-decay="200"
+                        interaction-prompt="none">
+                    </model-viewer>
+                    <div class="hud-overlay">
+                        <div class="hud-laser-scanner"></div>
+                        <div class="hud-reticle">
+                            <div class="reticle-circle"></div>
+                            <div class="reticle-line reticle-h"></div>
+                            <div class="reticle-line reticle-v"></div>
+                        </div>
+                        <div class="hud-bracket hud-top-left"></div>
+                        <div class="hud-bracket hud-top-right"></div>
+                        <div class="hud-bracket hud-bottom-left"></div>
+                        <div class="hud-bracket hud-bottom-right"></div>
+                        <div class="hud-scanner-ring"></div>
+                        <div class="hud-data hud-data-1">SYS: LCK_ON</div>
+                        <div class="hud-data hud-data-2">PWR: 100%</div>
+                    </div>
+                    <div class="hud-particles-container"></div>
+                </div>
+                <div class="intro">
+                    <div class="title">BRAND: POLY.PIZZA</div>
+                    <div class="topic">GUN VERSION 2</div>
+                    <div class="price-tag">
+                        <span class="price-discount">$39.99</span>
+                        <span class="price-original">$49.99</span>
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="des">
+                        The classic compact low-poly toy pistol model. An incredibly adorable, stylized handheld weapon perfect for retro arcade-style layouts.
+                    </div>
+                    <button class="seemore">See Details &#8599;</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Pistol Ver. 2</div>
+                    <div class="des">
+                        A blocky, cute pistol design optimized for game development. Features a red and orange color palette that mimics retro gaming lightguns.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Asset Type</p>
+                            <p>3D GLB Model</p>
+                        </div>
+                        <div>
+                            <p>Polygons</p>
+                            <p>Low-Poly</p>
+                        </div>
+                        <div>
+                            <p>Style</p>
+                            <p>Retro Arcade</p>
+                        </div>
+                        <div>
+                            <p>Color Accent</p>
+                            <p>Bright Red</p>
+                        </div>
+                        <div>
+                            <p>Interactivity</p>
+                            <p>360° Control</p>
+                        </div>
+                        <div>
+                            <p>AR Ready</p>
+                            <p>Yes (WebXR)</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>Add to Cart</button>
+                        <button>Download</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 5: Lightning Gun -->
+            <div class="item" data-index="4" style="--item-glow: #2b7fff;">
+                <div class="model-container">
+                    <model-viewer 
+                        src="Model3d/Lightning%20Gun.glb" 
+                        alt="3D Lightning Gun Model" 
+                        auto-rotate 
+                        camera-controls 
+                        shadow-intensity="1.5" 
+                        shadow-softness="0.8"
+                        field-of-view="40deg"
+                        min-field-of-view="15deg"
+                        max-field-of-view="90deg"
+                        interpolation-decay="200"
+                        interaction-prompt="none">
+                    </model-viewer>
+                    <div class="hud-overlay">
+                        <div class="hud-laser-scanner"></div>
+                        <div class="hud-reticle">
+                            <div class="reticle-circle"></div>
+                            <div class="reticle-line reticle-h"></div>
+                            <div class="reticle-line reticle-v"></div>
+                        </div>
+                        <div class="hud-bracket hud-top-left"></div>
+                        <div class="hud-bracket hud-top-right"></div>
+                        <div class="hud-bracket hud-bottom-left"></div>
+                        <div class="hud-bracket hud-bottom-right"></div>
+                        <div class="hud-scanner-ring"></div>
+                        <div class="hud-data hud-data-1">SYS: LCK_ON</div>
+                        <div class="hud-data hud-data-2">PWR: 100%</div>
+                    </div>
+                    <div class="hud-particles-container"></div>
+                </div>
+                <div class="intro">
+                    <div class="title">BRAND: VOLT LABS</div>
+                    <div class="topic">LIGHTNING GUN</div>
+                    <div class="price-tag">
+                        <span class="price-discount">$99.99</span>
+                        <span class="price-original">$149.99</span>
+                        <span class="discount-badge">-33%</span>
+                    </div>
+                    <div class="des">
+                        An energy-charged electric gun that projects electrical bolts. Bright electric blue details and lightning coils make it a visual masterpiece.
+                    </div>
+                    <button class="seemore">See Details &#8599;</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Volt Cannon</div>
+                    <div class="des">
+                        Bring electricity to your design with glowing tesla coils, discharge emitters, and heavy-duty power supplies built into an ultra-cute chassis.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Asset Type</p>
+                            <p>3D GLB Model</p>
+                        </div>
+                        <div>
+                            <p>Polygons</p>
+                            <p>Low-Poly</p>
+                        </div>
+                        <div>
+                            <p>Style</p>
+                            <p>Tesla Punk</p>
+                        </div>
+                        <div>
+                            <p>Volt Output</p>
+                            <p>1.21 Gigawatts</p>
+                        </div>
+                        <div>
+                            <p>Interactivity</p>
+                            <p>360° Control</p>
+                        </div>
+                        <div>
+                            <p>AR Ready</p>
+                            <p>Yes (WebXR)</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>Add to Cart</button>
+                        <button>Download</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 6: Rail Gun Turret -->
+            <div class="item" data-index="5" style="--item-glow: #e02cff;">
+                <div class="model-container">
+                    <model-viewer 
+                        src="Model3d/Rail%20Gun%20Turret.glb" 
+                        alt="3D Rail Gun Turret Model" 
+                        auto-rotate 
+                        camera-controls 
+                        shadow-intensity="1.5" 
+                        shadow-softness="0.8"
+                        field-of-view="40deg"
+                        min-field-of-view="15deg"
+                        max-field-of-view="90deg"
+                        interpolation-decay="200"
+                        interaction-prompt="none">
+                    </model-viewer>
+                    <div class="hud-overlay">
+                        <div class="hud-laser-scanner"></div>
+                        <div class="hud-reticle">
+                            <div class="reticle-circle"></div>
+                            <div class="reticle-line reticle-h"></div>
+                            <div class="reticle-line reticle-v"></div>
+                        </div>
+                        <div class="hud-bracket hud-top-left"></div>
+                        <div class="hud-bracket hud-top-right"></div>
+                        <div class="hud-bracket hud-bottom-left"></div>
+                        <div class="hud-bracket hud-bottom-right"></div>
+                        <div class="hud-scanner-ring"></div>
+                        <div class="hud-data hud-data-1">SYS: LCK_ON</div>
+                        <div class="hud-data hud-data-2">PWR: 100%</div>
+                    </div>
+                    <div class="hud-particles-container"></div>
+                </div>
+                <div class="intro">
+                    <div class="title">BRAND: ORBIT DEFENSE</div>
+                    <div class="topic">RAIL TURRET</div>
+                    <div class="price-tag">
+                        <span class="price-discount">$149.99</span>
+                        <span class="price-original">$199.99</span>
+                        <span class="discount-badge">-25%</span>
+                    </div>
+                    <div class="des">
+                        A heavy stationary orbital defense turret model. Features massive linear accelerator rails and a rotating mount designed for cosmic fortifications.
+                    </div>
+                    <button class="seemore">See Details &#8599;</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Rail Turret X-88</div>
+                    <div class="des">
+                        A robust turret asset with double magnetic rails and a mechanical swiveling base, designed to look incredibly cool and futuristic while keeping a clean low-poly style.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Asset Type</p>
+                            <p>3D GLB Model</p>
+                        </div>
+                        <div>
+                            <p>Polygons</p>
+                            <p>Detailed Low</p>
+                        </div>
+                        <div>
+                            <p>Style</p>
+                            <p>Stationary Turret</p>
+                        </div>
+                        <div>
+                            <p>Mounting</p>
+                            <p>360° Swivel Base</p>
+                        </div>
+                        <div>
+                            <p>Interactivity</p>
+                            <p>360° Control</p>
+                        </div>
+                        <div>
+                            <p>AR Ready</p>
+                            <p>Yes (WebXR)</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>Add to Cart</button>
+                        <button>Download</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 7: Ray Gun -->
+            <div class="item" data-index="6" style="--item-glow: #00ffd5;">
+                <div class="model-container">
+                    <model-viewer 
+                        src="Model3d/Ray%20Gun.glb" 
+                        alt="3D Ray Gun Model" 
+                        auto-rotate 
+                        camera-controls 
+                        shadow-intensity="1.5" 
+                        shadow-softness="0.8"
+                        field-of-view="40deg"
+                        min-field-of-view="15deg"
+                        max-field-of-view="90deg"
+                        interpolation-decay="200"
+                        interaction-prompt="none">
+                    </model-viewer>
+                    <div class="hud-overlay">
+                        <div class="hud-laser-scanner"></div>
+                        <div class="hud-reticle">
+                            <div class="reticle-circle"></div>
+                            <div class="reticle-line reticle-h"></div>
+                            <div class="reticle-line reticle-v"></div>
+                        </div>
+                        <div class="hud-bracket hud-top-left"></div>
+                        <div class="hud-bracket hud-top-right"></div>
+                        <div class="hud-bracket hud-bottom-left"></div>
+                        <div class="hud-bracket hud-bottom-right"></div>
+                        <div class="hud-scanner-ring"></div>
+                        <div class="hud-data hud-data-1">SYS: LCK_ON</div>
+                        <div class="hud-data hud-data-2">PWR: 100%</div>
+                    </div>
+                    <div class="hud-particles-container"></div>
+                </div>
+                <div class="intro">
+                    <div class="title">BRAND: RETRO SPACE</div>
+                    <div class="topic">RAY GUN</div>
+                    <div class="price-tag">
+                        <span class="price-discount">$79.99</span>
+                        <span class="price-original">$99.99</span>
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="des">
+                        A classic vintage 1950s retro ray gun model. Featuring red rings, bubble muzzle, and retro-futuristic detailing.
+                    </div>
+                    <button class="seemore">See Details &#8599;</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Cosmic Ray Gun</div>
+                    <div class="des">
+                        Inspired by early space sci-fi, this ray gun model contains detailed concentric discharge rings, a glass chamber, and a bright toy-like color scheme.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Asset Type</p>
+                            <p>3D GLB Model</p>
+                        </div>
+                        <div>
+                            <p>Polygons</p>
+                            <p>Low-Poly</p>
+                        </div>
+                        <div>
+                            <p>Style</p>
+                            <p>1950s Retro Space</p>
+                        </div>
+                        <div>
+                            <p>Beam color</p>
+                            <p>Emerald Green</p>
+                        </div>
+                        <div>
+                            <p>Interactivity</p>
+                            <p>360° Control</p>
+                        </div>
+                        <div>
+                            <p>AR Ready</p>
+                            <p>Yes (WebXR)</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>Add to Cart</button>
+                        <button>Download</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 8: Rocket Launcher -->
+            <div class="item" data-index="7" style="--item-glow: #ffea00;">
+                <div class="model-container">
+                    <model-viewer 
+                        src="Model3d/Rocket%20Launcher.glb" 
+                        alt="3D Rocket Launcher Model" 
+                        auto-rotate 
+                        camera-controls 
+                        shadow-intensity="1.5" 
+                        shadow-softness="0.8"
+                        field-of-view="40deg"
+                        min-field-of-view="15deg"
+                        max-field-of-view="90deg"
+                        interpolation-decay="200"
+                        interaction-prompt="none">
+                    </model-viewer>
+                    <div class="hud-overlay">
+                        <div class="hud-laser-scanner"></div>
+                        <div class="hud-reticle">
+                            <div class="reticle-circle"></div>
+                            <div class="reticle-line reticle-h"></div>
+                            <div class="reticle-line reticle-v"></div>
+                        </div>
+                        <div class="hud-bracket hud-top-left"></div>
+                        <div class="hud-bracket hud-top-right"></div>
+                        <div class="hud-bracket hud-bottom-left"></div>
+                        <div class="hud-bracket hud-bottom-right"></div>
+                        <div class="hud-scanner-ring"></div>
+                        <div class="hud-data hud-data-1">SYS: LCK_ON</div>
+                        <div class="hud-data hud-data-2">PWR: 100%</div>
+                    </div>
+                    <div class="hud-particles-container"></div>
+                </div>
+                <div class="intro">
+                    <div class="title">BRAND: BOOM CO.</div>
+                    <div class="topic">ROCKET LAUNCHER</div>
+                    <div class="price-tag">
+                        <span class="price-discount">$129.99</span>
+                        <span class="price-original">$169.99</span>
+                        <span class="discount-badge">-23%</span>
+                    </div>
+                    <div class="des">
+                        An incredibly cute, stylized rocket launcher model. Large rocket barrel and toy-like design make it look both harmless and powerful.
+                    </div>
+                    <button class="seemore">See Details &#8599;</button>
+                </div>
+                <div class="detail">
+                    <div class="title">Bazooka Toy</div>
+                    <div class="des">
+                        This model is a fun, blocky take on a rocket launcher. Complete with oversized loaded rockets, textured grips, and a colorful cartoon design.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Asset Type</p>
+                            <p>3D GLB Model</p>
+                        </div>
+                        <div>
+                            <p>Polygons</p>
+                            <p>Low-Poly</p>
+                        </div>
+                        <div>
+                            <p>Style</p>
+                            <p>Cartoon Stylized</p>
+                        </div>
+                        <div>
+                            <p>Rocket Size</p>
+                            <p>Oversized Toy</p>
+                        </div>
+                        <div>
+                            <p>Interactivity</p>
+                            <p>360° Control</p>
+                        </div>
+                        <div>
+                            <p>AR Ready</p>
+                            <p>Yes (WebXR)</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>Add to Cart</button>
+                        <button>Download</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 9: Scifi Gun -->
+            <div class="item" data-index="8" style="--item-glow: #ff00b7;">
+                <div class="model-container">
+                    <model-viewer 
+                        src="Model3d/Scifi%20Gun.glb" 
+                        alt="3D Scifi Gun Model" 
+                        auto-rotate 
+                        camera-controls 
+                        shadow-intensity="1.5" 
+                        shadow-softness="0.8"
+                        field-of-view="40deg"
+                        min-field-of-view="15deg"
+                        max-field-of-view="90deg"
+                        interpolation-decay="200"
+                        interaction-prompt="none">
+                    </model-viewer>
+                    <div class="hud-overlay">
+                        <div class="hud-laser-scanner"></div>
+                        <div class="hud-reticle">
+                            <div class="reticle-circle"></div>
+                            <div class="reticle-line reticle-h"></div>
+                            <div class="reticle-line reticle-v"></div>
+                        </div>
+                        <div class="hud-bracket hud-top-left"></div>
+                        <div class="hud-bracket hud-top-right"></div>
+                        <div class="hud-bracket hud-bottom-left"></div>
+                        <div class="hud-bracket hud-bottom-right"></div>
+                        <div class="hud-scanner-ring"></div>
+                        <div class="hud-data hud-data-1">SYS: LCK_ON</div>
+                        <div class="hud-data hud-data-2">PWR: 100%</div>
+                    </div>
+                    <div class="hud-particles-container"></div>
+                </div>
+                <div class="intro">
+                    <div class="title">BRAND: NEO WEAPONS</div>
+                    <div class="topic">SCIFI GUN</div>
+                    <div class="price-tag">
+                        <span class="price-discount">$69.99</span>
+                        <span class="price-original">$89.99</span>
+                        <span class="discount-badge">-22%</span>
+                    </div>
+                    <div class="des">
+                        A sleek futuristic sci-fi submachine gun model with glowing energy conduits and ergonomic design.
+                    </div>
+                    <button class="seemore">See Details &#8599;</button>
+                </div>
+                <div class="detail">
+                    <div class="title">SMG Neo-V</div>
+                    <div class="des">
+                        A highly tactical cyberpunk submachine gun model showcasing neon-themed heat sinks, collapsible stock details, and micro-scope optics.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Asset Type</p>
+                            <p>3D GLB Model</p>
+                        </div>
+                        <div>
+                            <p>Polygons</p>
+                            <p>Low-Poly</p>
+                        </div>
+                        <div>
+                            <p>Style</p>
+                            <p>Cyberpunk SMG</p>
+                        </div>
+                        <div>
+                            <p>Conduits</p>
+                            <p>Neon Cyan LED</p>
+                        </div>
+                        <div>
+                            <p>Interactivity</p>
+                            <p>360° Control</p>
+                        </div>
+                        <div>
+                            <p>AR Ready</p>
+                            <p>Yes (WebXR)</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>Add to Cart</button>
+                        <button>Download</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 10: Scifi Rifle -->
+            <div class="item" data-index="9" style="--item-glow: #ffffff;">
+                <div class="model-container">
+                    <model-viewer 
+                        src="Model3d/Scifi%20Rifle.glb" 
+                        alt="3D Scifi Rifle Model" 
+                        auto-rotate 
+                        camera-controls 
+                        shadow-intensity="1.5" 
+                        shadow-softness="0.8"
+                        field-of-view="40deg"
+                        min-field-of-view="15deg"
+                        max-field-of-view="90deg"
+                        interpolation-decay="200"
+                        interaction-prompt="none">
+                    </model-viewer>
+                    <div class="hud-overlay">
+                        <div class="hud-laser-scanner"></div>
+                        <div class="hud-reticle">
+                            <div class="reticle-circle"></div>
+                            <div class="reticle-line reticle-h"></div>
+                            <div class="reticle-line reticle-v"></div>
+                        </div>
+                        <div class="hud-bracket hud-top-left"></div>
+                        <div class="hud-bracket hud-top-right"></div>
+                        <div class="hud-bracket hud-bottom-left"></div>
+                        <div class="hud-bracket hud-bottom-right"></div>
+                        <div class="hud-scanner-ring"></div>
+                        <div class="hud-data hud-data-1">SYS: LCK_ON</div>
+                        <div class="hud-data hud-data-2">PWR: 100%</div>
+                    </div>
+                    <div class="hud-particles-container"></div>
+                </div>
+                <div class="intro">
+                    <div class="title">BRAND: ZENITH TECH</div>
+                    <div class="topic">SCIFI RIFLE</div>
+                    <div class="price-tag">
+                        <span class="price-discount">$119.99</span>
+                        <span class="price-original">$149.99</span>
+                        <span class="discount-badge">-20%</span>
+                    </div>
+                    <div class="des">
+                        A long-range tactical energy rifle model. Featuring glowing sights, stabilizing stocks, and premium futuristic armor plating.
+                    </div>
+                    <button class="seemore">See Details &#8599;</button>
+                </div>
+                <div class="detail">
+                    <div class="title">DMR Zenith</div>
+                    <div class="des">
+                        An elite tactical marksman rifle featuring heavy duty armor composite plating, dual carbon barrels, and holographic scope overlay details.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Asset Type</p>
+                            <p>3D GLB Model</p>
+                        </div>
+                        <div>
+                            <p>Polygons</p>
+                            <p>High Detail</p>
+                        </div>
+                        <div>
+                            <p>Style</p>
+                            <p>Tactical Cyber</p>
+                        </div>
+                        <div>
+                            <p>Range</p>
+                            <p>Long Distance</p>
+                        </div>
+                        <div>
+                            <p>Interactivity</p>
+                            <p>360° Control</p>
+                        </div>
+                        <div>
+                            <p>AR Ready</p>
+                            <p>Yes (WebXR)</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>Add to Cart</button>
+                        <button>Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel navigation buttons -->
+        <div class="arrows">
+            <button id="prev">&lt;</button>
+            <button id="next">&gt;</button>
+            <button id="back">Go Back</button>
+        </div>
+    </div>
+    <!-- Interactive Grid Selection Modal -->
+    <div class="models-modal" id="modelsModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <h2 class="modal-title">SELECT A 3D MODEL</h2>
+            <p class="modal-subtitle">Browse our 10 premium low-poly tactical toy designs</p>
+            
+            <!-- Sparkles Container Inside Modal -->
+            <div class="sparkles-container" id="sparklesContainer"></div>
+            <div class="models-grid">
+                <div class="grid-item" data-target="0" style="--card-glow: #00ff66;">
+                    <div class="card-glow-bg"></div>
+                    <div class="grid-brand">POLY.PIZZA</div>
+                    <h3 class="grid-name">WATER GUN</h3>
+                    <div class="grid-price">$49.99</div>
+                    <button class="grid-btn">View Model</button>
+                </div>
+                <div class="grid-item" data-target="1" style="--card-glow: #ff0055;">
+                    <div class="card-glow-bg"></div>
+                    <div class="grid-brand">SCI-FI TOYS</div>
+                    <h3 class="grid-name">BLASTER E-TYPE</h3>
+                    <div class="grid-price">$59.99</div>
+                    <button class="grid-btn">View Model</button>
+                </div>
+                <div class="grid-item" data-target="2" style="--card-glow: #00f2fe;">
+                    <div class="card-glow-bg"></div>
+                    <div class="grid-brand">CYBER ARMS</div>
+                    <h3 class="grid-name">COIL GUN</h3>
+                    <div class="grid-price">$89.99</div>
+                    <button class="grid-btn">View Model</button>
+                </div>
+                <div class="grid-item" data-target="3" style="--card-glow: #ffa200;">
+                    <div class="card-glow-bg"></div>
+                    <div class="grid-brand">POLY.PIZZA</div>
+                    <h3 class="grid-name">GUN VERSION 2</h3>
+                    <div class="grid-price">$39.99</div>
+                    <button class="grid-btn">View Model</button>
+                </div>
+                <div class="grid-item" data-target="4" style="--card-glow: #2b7fff;">
+                    <div class="card-glow-bg"></div>
+                    <div class="grid-brand">VOLT LABS</div>
+                    <h3 class="grid-name">LIGHTNING GUN</h3>
+                    <div class="grid-price">$99.99</div>
+                    <button class="grid-btn">View Model</button>
+                </div>
+                <div class="grid-item" data-target="5" style="--card-glow: #e02cff;">
+                    <div class="card-glow-bg"></div>
+                    <div class="grid-brand">ORBIT DEFENSE</div>
+                    <h3 class="grid-name">RAIL TURRET</h3>
+                    <div class="grid-price">$149.99</div>
+                    <button class="grid-btn">View Model</button>
+                </div>
+                <div class="grid-item" data-target="6" style="--card-glow: #00ffd5;">
+                    <div class="card-glow-bg"></div>
+                    <div class="grid-brand">RETRO SPACE</div>
+                    <h3 class="grid-name">RAY GUN</h3>
+                    <div class="grid-price">$79.99</div>
+                    <button class="grid-btn">View Model</button>
+                </div>
+                <div class="grid-item" data-target="7" style="--card-glow: #ffea00;">
+                    <div class="card-glow-bg"></div>
+                    <div class="grid-brand">BOOM CO.</div>
+                    <h3 class="grid-name">ROCKET LAUNCHER</h3>
+                    <div class="grid-price">$129.99</div>
+                    <button class="grid-btn">View Model</button>
+                </div>
+                <div class="grid-item" data-target="8" style="--card-glow: #ff00b7;">
+                    <div class="card-glow-bg"></div>
+                    <div class="grid-brand">NEO WEAPONS</div>
+                    <h3 class="grid-name">SCIFI GUN</h3>
+                    <div class="grid-price">$69.99</div>
+                    <button class="grid-btn">View Model</button>
+                </div>
+                <div class="grid-item" data-target="9" style="--card-glow: #ffffff;">
+                    <div class="card-glow-bg"></div>
+                    <div class="grid-brand">ZENITH TECH</div>
+                    <h3 class="grid-name">SCIFI RIFLE</h3>
+                    <div class="grid-price">$119.99</div>
+                    <button class="grid-btn">View Model</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
